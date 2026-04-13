@@ -1,0 +1,26 @@
+site_name: Documentação técnica Kratos Robotics
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Produto: Produto/
+  - Falhas: Falhas/problemas-e-solucoes.md
+  - Manutenção: Manutencao/
+  - Fornecedores: Fornecedores/
+  - Checklists:
+    - Instalação: Checklists/instalacao.md
+    - Preventiva: Checklists/preventiva.md
+    - Retorno: Checklists/retorno.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js
+  - js/checkbox.js
