@@ -104,6 +104,24 @@ Para cada tópico, teste se o problema foi resolvido. Caso não tenha, siga para
 
 - Nas configurações do Android, procure pela opção de ativar/desativar o hotspot pessoal do robô. Conecte um computador a ele e tente mandar "ping 192.168.64.20" no prompt de comando. Caso não tenha resposta, troque a IPC do robô.
 
+
+**3. Robô inicia com interface de outro modelo**
+
+**Identificação:**
+
+Interface principal mostra foto de um modelo diferente do que deveria ser.
+
+Funionalidades básicas podem não funcionar (Exemplos: tela do T10 não liga, detecção de bandeja não funciona)
+
+**Possível causa:**
+Arquivo product.properties vazio
+
+**Resolução:**
+
+
+
+---
+
 ## Falhas de hardware
 
 **1. Tela touch da interface de operação não funciona**

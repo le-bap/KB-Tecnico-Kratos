@@ -31,7 +31,7 @@
   <li><input type="checkbox"> <span>Mostrar funcionamento da celebração de aniversário</span></li>
 </ul>
 
-<button onclick="baixarPDF()" style="
+<button onclick="baixarPDF('Instalação')" style="
   background-color: #1976d2;
   color: white;
   border: none;

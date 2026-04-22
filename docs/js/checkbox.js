@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function baixarPDF() {
+function baixarPDF(tipo) {
   const { jsPDF } = window.jspdf;
 
   const doc = new jsPDF();
@@ -24,7 +24,7 @@ function baixarPDF() {
   const dataFormatada = hoje.toLocaleDateString("pt-BR") + " " + hoje.toLocaleTimeString("pt-BR");
 
   doc.setFontSize(16);
-  doc.text("Checklist de Instalação", 10, 15);
+  doc.text("Checklist de "+ tipo, 10, 15);
 
   doc.setFontSize(10);
   doc.text(`Data: ${dataFormatada}`, 10, 22);
@@ -44,7 +44,7 @@ function baixarPDF() {
   y += 8;
 });
 
-  const nomeArquivo = `checklist-instalacao-${hoje.toISOString().slice(0,10)}.pdf`;
+  const nomeArquivo = `checklist-${hoje.toISOString().slice(0,10)}.pdf`;
 
   doc.save(nomeArquivo);
 
@@ -53,4 +53,60 @@ function baixarPDF() {
     checkbox.checked = false;
     localStorage.setItem("checkbox-" + index, false);
   });
+}
+
+function gerarPDFComercial(tipo) {
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF();
+
+  const itens = document.querySelectorAll("#checklist li");
+
+  const hoje = new Date();
+  const dataFormatada = hoje.toLocaleDateString("pt-BR") + " " + hoje.toLocaleTimeString("pt-BR");
+
+  // Título
+  doc.setFontSize(16);
+  doc.text(`Checklist de ${tipo}`, 10, 15);
+
+  // Data
+  doc.setFontSize(10);
+  doc.text(`Data: ${dataFormatada}`, 10, 22);
+
+  let y = 30;
+  doc.setFontSize(12);
+
+  itens.forEach((item) => {
+    const textoSpan = item.querySelector("span");
+    const inputTexto = item.querySelector("input[type=text]");
+    const select = item.querySelector("select");
+
+    let campo = textoSpan ? textoSpan.textContent.trim() : "";
+    let valor = "";
+
+    // pega valor do input
+    if (inputTexto && inputTexto.value) {
+      valor = inputTexto.value;
+    }
+
+    // pega valor do select (sobrescreve se existir)
+    if (select) {
+      valor = select.options[select.selectedIndex].text;
+    }
+
+    // só adiciona no PDF se tiver algo relevante
+    if (campo && valor) {
+      const linha = `${campo}: ${valor}`;
+      doc.text(linha, 10, y);
+      y += 8;
+    }
+
+    // quebra de página
+    if (y > 280) {
+      doc.addPage();
+      y = 20;
+    }
+  });
+
+  const nomeArquivo = `checklist-${hoje.toISOString().slice(0,10)}.pdf`;
+  doc.save(nomeArquivo);
 }

@@ -13,6 +13,7 @@ nav:
     - Instalação: Checklists/instalacao.md
     - Preventiva: Checklists/preventiva.md
     - Retorno: Checklists/retorno.md
+    - Comercial: Checklists/comercial.md
 
 markdown_extensions:
   - toc:
