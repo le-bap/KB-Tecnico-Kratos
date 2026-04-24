@@ -25,3 +25,4 @@ markdown_extensions:
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js
   - js/checkbox.js
+  - js/analise-modelo.js
