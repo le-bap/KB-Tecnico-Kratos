@@ -105,7 +105,8 @@ Para cada tópico, teste se o problema foi resolvido. Caso não tenha, siga para
 - Nas configurações do Android, procure pela opção de ativar/desativar o hotspot pessoal do robô. Conecte um computador a ele e tente mandar "ping 192.168.64.20" no prompt de comando. Caso não tenha resposta, troque a IPC do robô.
 
 
-**3. Robô inicia com interface de outro modelo**
+
+** 3. Robô inicia com interface de outro modelo**
 
 **Identificação:**
 
@@ -241,6 +242,8 @@ Para cada tópico, teste se o problema foi resolvido. Caso não tenha, siga para
 - Reinstale os aplicativos Dinerbot e Robot Installation Assistant e certifique-se que a versão utilizada é a mais recente
 
 - Nas configurações do Android, procure pela opção de ativar/desativar o hotspot pessoal do robô. Conecte um computador a ele e tente mandar "ping 192.168.64.20" no prompt de comando. Caso não tenha resposta, troque a IPC do robô.
+
+
 ---
 **2.  Mensagem de erro "No Charging Pile found"**
 
@@ -346,6 +349,49 @@ Perda de calibração dos sensores.
 4.  Interrompa o carregamento
 
 5.  Teste enviar o robô para alguns pontos e certifique-se de que o posicionamento está correto
+
+
+## Falhas de mapeamento
+
+**Mapa fica destorcido a medida que é expandido**
+
+**Identificação:**
+
+Corredores se fundindo/não paralelos entre si
+
+**Possível causa:** Espaço extenso, com poucos pontos estáticos para referência 
+
+**Resolução:** 
+
+Considerações iniciais:
+
+Antes de iniciar, distribua no espaço a ser mapeado objetos que podem ser reconhecidos pelo robô, como por exemplo caixas.
+
+Não mapeie todo o espaço de uma vez. Divida-o em áreas e repita o processo abaixo para cada uma delas.
+
+Uma localização bem sucedida e um mapa coerente com o espaço é percebido quando a leitura do LiDAR indicado no mapa é compátivel com o que está marcado em preto.
+
+Procedimento:
+
+1. Abra a ferramenta de mapeamento;
+
+2. Encoste o robô no carregador;
+
+3. Verifique se sua posição no mapa equivale a sua posição real;
+
+4. Ande com o robô até um ponto que seja fácil de reconhecer tanto no mapa, quando no espaço fisico;
+
+5. Clique longamente no botão "Complete" e selecione "close look point";
+
+6. Comece a andar com o robô, sempre atento às leituras do LiDAR (pontos vermelhos no mapa). Essa leitura deve ser compativel aos pontos/linhas pretas registradas no mapa;
+
+7. Caso haja distorção, pare de caminhar e movimente o robô lentamente no local onde houve a falha. Os objetos postos antes de iniciar o mapa podem ajudar a restaurar a localização;
+
+8. Com a localização restaurada, siga escaneando o local, até finalizar a área;
+
+9. Leve o robô até o ponto determinado no passo 5 e clique longamentente no botão "Complete", selecionando "finish close look point" quando aparecer
+
+10. Complete o Scan e analise o resultado
 
 ## Outros
 
