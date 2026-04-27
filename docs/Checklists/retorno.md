@@ -6,7 +6,6 @@
   <li><input type="checkbox"> <span>Vincular o robô na loja "INSIGN - Kratos Robotics" na plataforma da Keenon</span></li>
   <li><input type="checkbox"> <span>Simular uma entrega e validar sensores e navegação</span></li>
   <li><input type="checkbox"> <span>Testar carregador de base</span></li>
-  <br>
   <li><input type="checkbox"> <span>Testar carregador manual</span></li>
   <li><input type="checkbox"> <span>Guardar na caixa e colar selo de "Equipamento verificado" (caso não fique em showroom)</span></li>
   <li><input type="checkbox"> <span>Atualizar Pipefy</span></li>

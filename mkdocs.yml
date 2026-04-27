@@ -7,7 +7,7 @@ nav:
   - Home: index.md
   - Produto: Produto/
   - Falhas: Falhas/problemas-e-solucoes.md
-  - Manutenção: Manutencao/
+  - Manutenção e Tutoriais: ManutencaoTutoriais/tutoriais.md
   - Fornecedores: Fornecedores/
   - Checklists:
     - Instalação: Checklists/instalacao.md

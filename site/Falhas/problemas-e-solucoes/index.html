@@ -729,6 +729,7 @@
 <li><a href="#geral">Geral</a><ul>
 <li><a href="#falhas-de-carregamento_1">Falhas de carregamento</a></li>
 <li><a href="#falhas-de-localizacao">Falhas de localização</a></li>
+<li><a href="#falhas-de-mapeamento">Falhas de mapeamento</a></li>
 <li><a href="#outros_1">Outros</a></li>
 </ul>
 </li>
@@ -999,6 +1000,49 @@ Perda de calibração dos sensores.</p>
 </li>
 <li>
 <p>Teste enviar o robô para alguns pontos e certifique-se de que o posicionamento está correto</p>
+</li>
+</ol>
+<h2 id="falhas-de-mapeamento">Falhas de mapeamento<a class="headerlink" href="#falhas-de-mapeamento" title="Permanent link">&para;</a></h2>
+<p><strong>Mapa fica destorcido a medida que é expandido</strong></p>
+<p><strong>Identificação:</strong></p>
+<p>Corredores se fundindo/não paralelos entre si</p>
+<p><strong>Possível causa:</strong> Espaço extenso, com poucos pontos estáticos para referência </p>
+<p><strong>Resolução:</strong> </p>
+<p>Considerações iniciais:</p>
+<p>Antes de iniciar, distribua no espaço a ser mapeado objetos que podem ser reconhecidos pelo robô, como por exemplo caixas.</p>
+<p>Não mapeie todo o espaço de uma vez. Divida-o em áreas e repita o processo abaixo para cada uma delas.</p>
+<p>Uma localização bem sucedida e um mapa coerente com o espaço é percebido quando a leitura do LiDAR indicado no mapa é compátivel com o que está marcado em preto.</p>
+<p>Procedimento:</p>
+<ol>
+<li>
+<p>Abra a ferramenta de mapeamento;</p>
+</li>
+<li>
+<p>Encoste o robô no carregador;</p>
+</li>
+<li>
+<p>Verifique se sua posição no mapa equivale a sua posição real;</p>
+</li>
+<li>
+<p>Ande com o robô até um ponto que seja fácil de reconhecer tanto no mapa, quando no espaço fisico;</p>
+</li>
+<li>
+<p>Clique longamente no botão "Complete" e selecione "close look point";</p>
+</li>
+<li>
+<p>Comece a andar com o robô, sempre atento às leituras do LiDAR (pontos vermelhos no mapa). Essa leitura deve ser compativel aos pontos/linhas pretas registradas no mapa;</p>
+</li>
+<li>
+<p>Caso haja distorção, pare de caminhar e movimente o robô lentamente no local onde houve a falha. Os objetos postos antes de iniciar o mapa podem ajudar a restaurar a localização;</p>
+</li>
+<li>
+<p>Com a localização restaurada, siga escaneando o local, até finalizar a área;</p>
+</li>
+<li>
+<p>Leve o robô até o ponto determinado no passo 5 e clique longamentente no botão "Complete", selecionando "finish close look point" quando aparecer</p>
+</li>
+<li>
+<p>Complete o Scan e analise o resultado</p>
 </li>
 </ol>
 <h2 id="outros_1">Outros<a class="headerlink" href="#outros_1" title="Permanent link">&para;</a></h2>
