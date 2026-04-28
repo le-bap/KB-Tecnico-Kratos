@@ -621,6 +621,17 @@
 <li><a href="#como-trocar-a-chassis-control-board">Como trocar a chassis control board</a></li>
 </ul>
 </li>
+<li><a href="#geral">Geral</a><ul>
+<li><a href="#como-duplicar-um-mapa">Como duplicar um mapa</a><ul>
+<li><a href="#parte-1-baixar-o-mapa-do-robo-original">Parte 1 — Baixar o mapa do robô original</a></li>
+<li><a href="#parte-2-preparar-o-robo-que-vai-receber-o-mapa">Parte 2 — Preparar o robô que vai receber o mapa</a></li>
+<li><a href="#parte-3-criar-um-mapa-temporario">Parte 3 — Criar um mapa temporário</a></li>
+<li><a href="#parte-4-importar-o-mapa-baixado">Parte 4 — Importar o mapa baixado</a></li>
+<li><a href="#parte-5-ajustes-finais">Parte 5 — Ajustes finais</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 <h1 id="linha-dinerbot-t8-t9-t10-t11">Linha DinerBot (T8, T9, T10, T11)<a class="headerlink" href="#linha-dinerbot-t8-t9-t10-t11" title="Permanent link">&para;</a></h1>
@@ -657,6 +668,108 @@
 </ol>
 <h1 id="modelo-s100">Modelo S100<a class="headerlink" href="#modelo-s100" title="Permanent link">&para;</a></h1>
 <h2 id="como-trocar-a-chassis-control-board">Como trocar a chassis control board<a class="headerlink" href="#como-trocar-a-chassis-control-board" title="Permanent link">&para;</a></h2>
+<h1 id="geral">Geral<a class="headerlink" href="#geral" title="Permanent link">&para;</a></h1>
+<h2 id="como-duplicar-um-mapa">Como duplicar um mapa<a class="headerlink" href="#como-duplicar-um-mapa" title="Permanent link">&para;</a></h2>
+<h3 id="parte-1-baixar-o-mapa-do-robo-original">Parte 1 — Baixar o mapa do robô original<a class="headerlink" href="#parte-1-baixar-o-mapa-do-robo-original" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Dentro da plataforma da Keenon, acesse "Operation and Maintenance Platform" → "Remote Operation and Maintenance" → "Remote Deployment"</p>
+</li>
+<li>
+<p>Clique em "+Create"</p>
+</li>
+<li>
+<p>Selecione o robô que já possui o mapa</p>
+</li>
+<li>
+<p>Após conectar, acesse Map Management</p>
+</li>
+<li>
+<p>Vá em: Settings → Advanced Settings → Download Map</p>
+</li>
+<li>
+<p>Aguarde o download → Será gerado um arquivo .zip com o mapa</p>
+</li>
+</ol>
+<h3 id="parte-2-preparar-o-robo-que-vai-receber-o-mapa">Parte 2 — Preparar o robô que vai receber o mapa<a class="headerlink" href="#parte-2-preparar-o-robo-que-vai-receber-o-mapa" title="Permanent link">&para;</a></h3>
+<p>(Se for o mesmo robô, pode pular essa parte)</p>
+<ol>
+<li>
+<p>Vincule o robô à loja (se ainda não estiver)</p>
+</li>
+<li>
+<p>No Robot Installation Assistant:</p>
+<ul>
+<li>Acesse Settings → Advanced Settings</li>
+<li>Clique em Restore to Factory Default</li>
+</ul>
+</li>
+<li>
+<p>Após reiniciar, siga os passos na tela para realizar o setup inicial</p>
+</li>
+<li>
+<p>⚠️ Importante:</p>
+<ul>
+<li>
+<p>No app principal: Acesse o menu Super Admin</p>
+</li>
+<li>
+<p>Configure o Data Center = Other Region</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>(Dica: reconfigure também os outros parâmetros dentro deste menu)</p>
+<h3 id="parte-3-criar-um-mapa-temporario">Parte 3 — Criar um mapa temporário<a class="headerlink" href="#parte-3-criar-um-mapa-temporario" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Crie um novo mapa simples no robô (não precisa ser detalhado — ele será sobrescrito)</p>
+</li>
+<li>
+<p>Finalize o processo clicando em Complete Mapping (verifique na plataforma da Keenon se este novo mapa foi enviado corretamente. Caso não tenha sido, verifique o Data Center e o W-Fi e tente novamente)</p>
+</li>
+</ol>
+<h3 id="parte-4-importar-o-mapa-baixado">Parte 4 — Importar o mapa baixado<a class="headerlink" href="#parte-4-importar-o-mapa-baixado" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Dentro da plataforma da Keenon, acesse novamente "Operation and Maintenance Platform" → "Remote Operation and Maintenance" → "Remote Deployment"</p>
+</li>
+<li>
+<p>Clique em "+Create"</p>
+</li>
+<li>
+<p>Selecione o robô que vai receber o mapa</p>
+</li>
+<li>
+<p>Após conectar, acesse Map Management</p>
+</li>
+<li>
+<p>Vá em: Settings → Advanced Settings → Import from Local</p>
+</li>
+<li>
+<p>Selecione o arquivo .zip baixado anteriormente</p>
+</li>
+<li>
+<p>Clique em Map Upload e aguarde</p>
+</li>
+</ol>
+<h3 id="parte-5-ajustes-finais">Parte 5 — Ajustes finais<a class="headerlink" href="#parte-5-ajustes-finais" title="Permanent link">&para;</a></h3>
+<p>O mapa será importado com os pontos e restrições, mas <strong>não</strong> inclui:</p>
+<ul>
+<li>
+<p>Configurações gerais do app</p>
+</li>
+<li>
+<p>Organização das abas</p>
+</li>
+<li>
+<p>Rotas de louça personalizadas</p>
+</li>
+<li>
+<p>Áudio em Português (BR)</p>
+</li>
+</ul>
+<p>Portanto, ajuste de acordo com o que foi configurado no outro robô e não se esqueça de setar também as confugurações do menu Super Admin, se já não foram setadas.</p>
 
 
 
