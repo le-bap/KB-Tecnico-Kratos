@@ -267,19 +267,7 @@ OBS: para robô em questão, as vassouras dianteiras e o aspirador de trás não
 
 **Resolução:**
 
-1.  Drene a água do tanque retirando a peça verde na parte inferior traseira do robô
-
-2.  Deite-o de modo em que possa acessar a parte de baixo
-
-3.  Remova a tampa de água fixa por 2 parafusos M4
-
-4.  Instale um filtro de água no canal mostrado na figura. Cortando o cano, adicione o filtro e isole novamente.
-
-![alt text](image.png)
-
-5.  Troque a válvula solenoide por uma nova
-
-6.  Feche a tampa protetora
+Troque a valvula solenoid, conforme ensinado em "Manutenções e Tutoriais" -> "Linha CleanBot (C40 e C30)" -> "Como trocar a valvula solenoide e instalar filtro"
 
 # Modelo S100
 
