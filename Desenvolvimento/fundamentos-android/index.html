@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../ManutencaoTutoriais/tutoriais/">
+        <link rel="prev" href="../sdk/">
       
       
-        <link rel="next" href="../preventiva/">
+        <link rel="next" href="../../Falhas/problemas-e-solucoes/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Instalação - Documentação técnica Kratos Robotics</title>
+        <title>Fundamentos do desenvolvimento Android - Documentação técnica Kratos Robotics</title>
       
     
     
@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introducao-a-programacao-android" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -95,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Instalação
+              Fundamentos do desenvolvimento Android
             
           </span>
         </div>
@@ -215,18 +220,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -247,7 +254,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -265,7 +272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Desenvolvimento/sdk/" class="md-nav__link">
+      <a href="../sdk/" class="md-nav__link">
         
   
   
@@ -290,10 +297,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Desenvolvimento/fundamentos-android/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -309,6 +325,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -406,20 +423,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -440,7 +455,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -455,17 +470,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Checklists/instalacao/" class="md-nav__link">
         
   
   
@@ -481,7 +489,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -494,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../preventiva/" class="md-nav__link">
+      <a href="../../Checklists/preventiva/" class="md-nav__link">
         
   
   
@@ -522,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../retorno/" class="md-nav__link">
+      <a href="../../Checklists/retorno/" class="md-nav__link">
         
   
   
@@ -550,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../comercial/" class="md-nav__link">
+      <a href="../../Checklists/comercial/" class="md-nav__link">
         
   
   
@@ -595,6 +602,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -611,56 +620,151 @@
 
 
 
-  <h1>Instalação</h1>
-
-<div id="checklist">
-
+<h1 id="introducao-a-programacao-android">Introdução à Programação Android<a class="headerlink" href="#introducao-a-programacao-android" title="Permanent link">&para;</a></h1>
+<p>O desenvolvimento Android é baseado na construção de aplicações executadas no sistema operacional Android, utilizando uma combinação de lógica de programação, interface gráfica e configurações de projeto. Atualmente, a plataforma oferece um ecossistema robusto para o desenvolvimento de aplicações modernas, escaláveis e compatíveis com diferentes dispositivos móveis.</p>
+<p>De forma geral, um aplicativo Android é composto por três elementos principais:</p>
 <ul>
-  <li><input type="checkbox"> <span>Conversa prévia com cliente e sondagem do local para entender posicionamento do carregador e das mesas</span></li>
-  <li><input type="checkbox"> <span>Posicionar carregador</span></li>
-  <li><input type="checkbox"> <span>Demarcar posição do carregador no chão</span></li>
-  <li><input type="checkbox"> <span>Colar adesivos de localização (se aplicável)</span></li>
-  <li><input type="checkbox"> <span>Cadastrar loja na dashboard da Keenon</span></li>
-  <li><input type="checkbox"> <span>Vincular robô à loja</span></li>
-  <li><input type="checkbox"> <span>No RIA, em Advanced Settings, restaurar configurações para nivel de fabrica</span></li>
-  <p><span>Entre nas configurações de administrador e configure:</span></p>
-  <li><input type="checkbox"> <span>Wi-fi</span></li>
-  <li><input type="checkbox"> <span>Data center para Other Region</span></li>
-  <li><input type="checkbox"> <span>ROS configurations</span></li>
-  <li><input type="checkbox"> <span>Habilitar carregamento automático</span></li>
-  <li><input type="checkbox"> <span>Mudar porcentagem de carregar para 10%</span></li>
-  <p><span>Com isso feito, entre em "mapping tool" para iniciar mapeamento:</span></p>
-  <li><input type="checkbox"> <span>Scannear o local</span></li>
-  <li><input type="checkbox"> <span>Definir linhas de restrição e remover ruído</span></li>
-  <li><input type="checkbox"> <span>Demarcar carregador, food outlets e tables</span></li>
-  <li><input type="checkbox"> <span>Completar o mapeamento (upload para cloud)</span></li>
-  <p><span>Espere até que o mapa seja baixado no app DinerBot e prossiga:</span></p>
-  <li><input type="checkbox"> <span>Aplicar configurações no menu principal de acordo com o ambiente e expectativas do cliente</span></li>
-  <li><input type="checkbox"> <span>Testar os pontos demarcados e arrumar se necessário</span></li>
-  <li><input type="checkbox"> <span>Traduzir os áudios</span></li>
-  <li><input type="checkbox"> <span>Criar das rotas de limpeza</span></li>
-  <p><span>Passar instruções sobre como utilizar o robô:</span></p>
-  <li><input type="checkbox"> <span>Mostrar sensores e botão de emergência</span></li>
-  <li><input type="checkbox"> <span>Mostrar funcionamento da opção de delivery</span></li>
-  <li><input type="checkbox"> <span>Mostrar funcionamento da opção de retorno de louça suja</span></li>
-  <li><input type="checkbox"> <span>Mostrar funcionamento da celebração de aniversário</span></li>
+<li><strong>Código-fonte (Java ou Kotlin):</strong> lógica e comportamento da aplicação;</li>
+<li><strong>Interface do usuário (XML ou Jetpack Compose):</strong> elementos visuais apresentados ao usuário;</li>
+<li><strong>Configurações do projeto (Gradle e Manifest):</strong> controlam o processo de compilação, permissões e características da aplicação.</li>
 </ul>
+<p>(Nosso projeto será desenvolvido utilizando <strong>Java + XML</strong>)</p>
+<hr />
+<h1 id="estrutura-basica-de-um-projeto-android">Estrutura Básica de um Projeto Android<a class="headerlink" href="#estrutura-basica-de-um-projeto-android" title="Permanent link">&para;</a></h1>
+<p>Ao criar um projeto no Android Studio, algumas estruturas fundamentais são geradas automaticamente:</p>
+<h2 id="diretorio-app">Diretório <code>app/</code><a class="headerlink" href="#diretorio-app" title="Permanent link">&para;</a></h2>
+<p>O diretório <code>app/</code> representa o módulo principal da aplicação, contendo os arquivos responsáveis pelo funcionamento do projeto.</p>
+<p>Dentro dele, destacam-se os seguintes componentes:</p>
+<hr />
+<h2 id="androidmanifestxml"><code>AndroidManifest.xml</code><a class="headerlink" href="#androidmanifestxml" title="Permanent link">&para;</a></h2>
+<p>O arquivo <code>AndroidManifest.xml</code> é responsável por descrever informações essenciais da aplicação para o sistema Android.</p>
+<p>Nele são definidas configurações como:</p>
+<ul>
+<li>Nome da aplicação;</li>
+<li>Permissões necessárias;</li>
+<li>Componentes principais da aplicação;</li>
+<li>Activity inicial responsável pela execução do app.</li>
+</ul>
+<p>Exemplo de declaração de permissão:</p>
+<pre><code class="language-xml">&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot;/&gt;
+</code></pre>
+<hr />
+<h2 id="diretorio-java">Diretório <code>java/</code><a class="headerlink" href="#diretorio-java" title="Permanent link">&para;</a></h2>
+<p>Esse diretório contém o código-fonte da aplicação.</p>
+<p>Exemplo de uma Activity básica em Java:</p>
+<pre><code class="language-java">public class MainActivity extends AppCompatActivity {
 
-<button onclick="baixarPDF('Instalação')" style="
-  background-color: #1976d2;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  font-size: 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 15px;
-  transition: background-color 0.3s ease;
-">
-  📄 Baixar PDF
-</button>
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+</code></pre>
+<p>A classe <code>MainActivity</code> geralmente representa a tela inicial da aplicação.</p>
+<hr />
+<h2 id="diretorio-res-resources">Diretório <code>res/</code> (Resources)<a class="headerlink" href="#diretorio-res-resources" title="Permanent link">&para;</a></h2>
+<p>O diretório <code>res/</code> armazena os recursos visuais e estáticos utilizados pela aplicação.</p>
+<p>Principais subdiretórios:</p>
+<ul>
+<li><code>layout/</code> → arquivos de interface em XML;</li>
+<li><code>drawable/</code> → imagens e elementos gráficos;</li>
+<li><code>values/</code> → cores, textos e temas da aplicação.</li>
+</ul>
+<p>Exemplo de componente visual em XML:</p>
+<pre><code class="language-xml">&lt;TextView
+    android:layout_width=&quot;wrap_content&quot;
+    android:layout_height=&quot;wrap_content&quot;
+    android:text=&quot;Olá mundo&quot;/&gt;
+</code></pre>
+<hr />
+<h1 id="gradle-e-configuracao-do-projeto">Gradle e Configuração do Projeto<a class="headerlink" href="#gradle-e-configuracao-do-projeto" title="Permanent link">&para;</a></h1>
+<p>O <strong>Gradle</strong> é o sistema responsável pela compilação e gerenciamento do projeto Android.</p>
+<p>Por meio dele, são definidas:</p>
+<ul>
+<li>Dependências externas;</li>
+<li>Versões do Android utilizadas;</li>
+<li>Configurações de build;</li>
+<li>Plugins e bibliotecas da aplicação.</li>
+</ul>
+<h2 id="buildgradle-project"><code>build.gradle (Project)</code><a class="headerlink" href="#buildgradle-project" title="Permanent link">&para;</a></h2>
+<p>Contém configurações globais do projeto.</p>
+<h2 id="buildgradle-module-app"><code>build.gradle (Module: app)</code><a class="headerlink" href="#buildgradle-module-app" title="Permanent link">&para;</a></h2>
+<p>Arquivo responsável pelas configurações específicas do módulo principal da aplicação.</p>
+<p>Exemplo:</p>
+<pre><code class="language-gradle">android {
+    compileSdk 34
 
-</div>
+    defaultConfig {
+        applicationId &quot;com.exemplo.app&quot;
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName &quot;1.0&quot;
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+}
+</code></pre>
+<h3 id="principais-configuracoes">Principais configurações<a class="headerlink" href="#principais-configuracoes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>compileSdk</code> → versão utilizada para compilar a aplicação;</li>
+<li><code>minSdk</code> → versão mínima suportada do Android;</li>
+<li><code>targetSdk</code> → versão alvo da aplicação;</li>
+<li><code>dependencies</code> → bibliotecas externas utilizadas no projeto.</li>
+</ul>
+<hr />
+<h1 id="componentes-fundamentais-do-android">Componentes Fundamentais do Android<a class="headerlink" href="#componentes-fundamentais-do-android" title="Permanent link">&para;</a></h1>
+<h2 id="activity">Activity<a class="headerlink" href="#activity" title="Permanent link">&para;</a></h2>
+<p>Uma <code>Activity</code> representa uma tela da aplicação e é responsável pela interação principal com o usuário.</p>
+<p>Exemplos:</p>
+<ul>
+<li>Tela de login;</li>
+<li>Tela de perfil;</li>
+<li>Tela de configurações.</li>
+</ul>
+<hr />
+<h2 id="intent">Intent<a class="headerlink" href="#intent" title="Permanent link">&para;</a></h2>
+<p>As <code>Intents</code> são utilizadas para comunicação entre componentes da aplicação, especialmente para navegação entre telas.</p>
+<p>Exemplo:</p>
+<pre><code class="language-java">Intent intent = new Intent(this, SegundaActivity.class);
+startActivity(intent);
+</code></pre>
+<hr />
+<h2 id="layout">Layout<a class="headerlink" href="#layout" title="Permanent link">&para;</a></h2>
+<p>Os layouts definem a estrutura visual da interface da aplicação, geralmente desenvolvidos em XML.</p>
+<hr />
+<h2 id="fragment">Fragment<a class="headerlink" href="#fragment" title="Permanent link">&para;</a></h2>
+<p>Um <code>Fragment</code> representa uma parte reutilizável da interface, permitindo modularizar telas e componentes.</p>
+<hr />
+<h1 id="desenvolvimento-de-interface">Desenvolvimento de Interface<a class="headerlink" href="#desenvolvimento-de-interface" title="Permanent link">&para;</a></h1>
+<p>Atualmente, existem duas principais abordagens para criação de interfaces Android.</p>
+<h2 id="xml">XML<a class="headerlink" href="#xml" title="Permanent link">&para;</a></h2>
+<p>Modelo tradicional baseado na separação entre interface e lógica da aplicação.</p>
+<p>Exemplo:</p>
+<pre><code class="language-xml">&lt;Button
+    android:layout_width=&quot;wrap_content&quot;
+    android:layout_height=&quot;wrap_content&quot;
+    android:text=&quot;Clique aqui&quot;/&gt;
+</code></pre>
+<hr />
+<h1 id="dependencias-e-bibliotecas">Dependências e Bibliotecas<a class="headerlink" href="#dependencias-e-bibliotecas" title="Permanent link">&para;</a></h1>
+<p>As bibliotecas externas são adicionadas ao projeto por meio do Gradle.</p>
+<p>Exemplo:</p>
+<pre><code class="language-gradle">implementation 'androidx.recyclerview:recyclerview:1.3.2'
+</code></pre>
+<p>Essas dependências fornecem funcionalidades adicionais, como componentes visuais, navegação, persistência de dados e integração com APIs.</p>
+<hr />
+<h1 id="processo-de-execucao-da-aplicacao">Processo de Execução da Aplicação<a class="headerlink" href="#processo-de-execucao-da-aplicacao" title="Permanent link">&para;</a></h1>
+<p>O fluxo básico de execução de uma aplicação Android ocorre da seguinte forma:</p>
+<ol>
+<li>O desenvolvedor executa o projeto pelo Android Studio;</li>
+<li>O Gradle realiza a compilação da aplicação;</li>
+<li>O aplicativo é instalado em um emulador ou dispositivo físico;</li>
+<li>O sistema inicia a <code>MainActivity</code>.</li>
+</ol>
 
 
 
