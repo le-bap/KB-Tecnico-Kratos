@@ -121,3 +121,4 @@ Portanto, ajuste de acordo com o que foi configurado no outro robô e não se es
 
 Operation and maintenance platform -> Device Management -> Playback
 
+## Instalar AnyDesk

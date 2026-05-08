@@ -9,9 +9,10 @@ nav:
     - SDK: Desenvolvimento/sdk.md
     - Fundamentos do desenvolvimento Android: Desenvolvimento/fundamentos-android.md
   - Falhas: Falhas/problemas-e-solucoes.md
-  - Manutenção e Tutoriais: ManutencaoTutoriais/tutoriais.md
+  - Manutenções e Tutoriais: ManutencaoTutoriais/tutoriais.md
   - Fornecedores: Fornecedores/
   - Checklists:
+    - PDI: Checklists/pdi.md
     - Instalação: Checklists/instalacao.md
     - Preventiva: Checklists/preventiva.md
     - Retorno: Checklists/retorno.md
