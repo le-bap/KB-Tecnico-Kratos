@@ -18,23 +18,24 @@ Este documento tem como objetivo auxiliar na manutenção dos robôs e trazer o 
 
 ## Como trocar a valvula solenoide e instalar filtro
 
-1.  Drene a água do tanque retirando a peça verde na parte inferior traseira do robô
+1. Drene a água do tanque retirando a peça verde na parte inferior traseira do robô
 
-2.  Deite-o de modo em que possa acessar a parte de baixo
+2. Deite-o de modo em que possa acessar a parte de baixo
 
-3.  Remova a tampa de água fixa por 2 parafusos M4:
+3. Remova a tampa de água fixa por 2 parafusos M4:
 
-<img src="/ManutencaoTutoriais/robo-deitado.png" width="300">
+   <img src="./robo-deitado.png" width="300">
 
-4.  Instale um filtro de água no canal mostrado na figura. Cortando o cano, adicione o filtro e isole novamente.
+4. Instale um filtro de água no canal mostrado na figura.  
+   Cortando o cano, adicione o filtro e isole novamente.
 
-<img src="/ManutencaoTutoriais/filtro.png" width="400">
+   <img src="./filtro.png" width="400">
 
-5.  Troque a válvula solenoide por uma nova
+5. Troque a válvula solenoide por uma nova
 
-6.  Feche a tampa protetora
+6. Feche a tampa protetora
 
-6.  Encha o tanque do robô com água novamente e deixe-o parado por um tempo para observar se existe algum vazamento
+7. Encha o tanque do robô com água novamente e deixe-o parado por um tempo para observar se existe algum vazamento
 
 # Modelo S100
 
@@ -115,3 +116,8 @@ O mapa será importado com os pontos e restrições, mas **não** inclui:
 - Áudio em Português (BR)
 
 Portanto, ajuste de acordo com o que foi configurado no outro robô e não se esqueça de setar também as confugurações do menu Super Admin, se já não foram setadas.
+
+## Rever gravação da movimentação do robô para debug
+
+Operation and maintenance platform -> Device Management -> Playback
+

@@ -5,7 +5,9 @@ theme:
 
 nav:
   - Home: index.md
-  - Produto: Produto/
+  - Desenvolvimento:
+    - SDK: Desenvolvimento/sdk.md
+    - Fundamentos do desenvolvimento Android: Desenvolvimento/fundamentos-android.md
   - Falhas: Falhas/problemas-e-solucoes.md
   - Manutenção e Tutoriais: ManutencaoTutoriais/tutoriais.md
   - Fornecedores: Fornecedores/
